@@ -14,55 +14,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-  <title>gamexs</title>
+  <title>Noah Hayes Portfolio</title>
 </head>
 <body>
   
   <!-- start header -->
   <header class="header" id="header">
     <div class="container">
-      <a href="#" class="logo">gamexs</a>
+      <a href="#" class="logo">Noah Hayes</a>
       <ul class="main-nav">
-        <li><a href="#article">article</a></li>
+        <li><a href="#article">games</a></li>
         <li><a href="#gallery">gallery</a></li>
-        <li><a href="#features">features</a></li>
-        <li>
-          <a href="#">other links</a>
-          <div class="mega-menu">
-            <div class="image"><img src="images/menu.png" alt="image not found"></div>
-            
-            <ul class="links">
-              <li>
-                <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
-              </li>
-              <li>
-                <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
-              </li>
-              <li>
-                <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
-              </li>
-              <li>
-                <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
-              </li>
-            </ul>
-            <ul class="links">
-              <li>
-                <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
-              </li>
-              <li>
-                <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
-              </li>
-              <li>
-                <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
-              </li>
-              <li>
-                <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
-              </li>
-            </ul>
-          
-        </div>
-        </li>
-
+        <li><a href="https://technicalgames.itch.io/">Itch.io</a></li>
+        <li><a href="https://github.com/Technicalslayer?tab=repositories">GitHub</a></li>
       </ul>
     </div>
   </header>
@@ -70,13 +34,12 @@
 
   <!-- start landing -->
   <div class="landing">
-    <div class="container">
-    <div class="text">
-      <h3>Welcome, To Gamexs World</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni dolorum vero aperiam esse, consequatur illum tenetur animi.</p>
-    </div>
-    <div class="image">
-      <img src="images/landing.png" alt="image not found!">
+    <div style="flex-direction: column; justify-content: center; align-items: center; display: flex; gap: 0px; min-height: 0px;" class="container">
+    <div style="height: 209px;" class="text">
+      <h3 style="text-align: center;">Hi, I'm Noah Hayes</h3>
+      <p style="text-align: center; display: inline-block; max-width: 624px; width: 735px;">I'm a game programmer currently developing a non autonomous tower defense game where you control each tower 
+      individually with a panel of buttons. I have been making games for ten years, starting out with Java using
+      libGDX before moving onto Unity, and then picking up Godot as my current favourite engine.</p>
     </div>
     <a href="#article"><img  class="up" src="images/up.png" alt="image not found"></a>
     </div>
@@ -86,16 +49,28 @@
   <!-- start article -->
   <div class="article" id="article">
   <h2 class="main-title">article</h2>
-  <div class="container">
+  <div style="grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 24px;" class="container">
 
     <div class="box">
-      <img src="images/game (1).webp" alt="image not found">
+      <video width="100% "
+             height="auto" controls muted>
+        <source src="videos/Useless-Level2Showcase.webm"
+                type="video/webm">
+      </video>
       <div class="text">
-        <h3>title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem cupiditate quae.</p>
+        <h3>Useless!</h3>
+        <p>Mini Stealth game with RTS elements. </p>
+        <p>I was the sole programmer and created the animated level transitions.</p>
+        <h4>Accomplishments</h4>
+        <ul>
+        <li>The detection radius is a mesh constructed in real-time with information from a series of raycasts.</li>
+        <li>I created a pathfinding system for the Hero and Oni using waypoints.</li>
+        <li>NPCs are governed with a state machine.</li>
+        </ul>
       </div>
+      
       <div class="info">
-        <a href="#">read more</a>
+        <a href="#">Play Here</a>
         <i class="fa-solid fa-right-long"></i>
       </div>
     </div>
@@ -213,10 +188,10 @@
       </div>
     </div>
   </div>
-  <!-- end gallery -->
+  <!-- end gallery --> 
 
   <!-- statr features -->
-  <div class="features" id="features">
+  <!-- <div class="features" id="features">
     <h2 class="main-title">features</h2>
     <div class="container">
 
@@ -244,11 +219,11 @@
     </div>
 
 
-  </div>
+  </div> -->
   <!-- end features -->
 
   <!-- start testimonials -->
-  <div class="testimonials" id="testimonials">
+  <!-- <div class="testimonials" id="testimonials">
     <h2 class="main-title">testimonials</h2>
     <div class="container">
       <div class="card">
@@ -335,10 +310,11 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
   <!-- end testimonials -->
 
   <!-- start team members -->
+  <!--
   <div class="team" id="team">
     <h2 class="main-title">team members</h2>
   <div class="container">
@@ -505,9 +481,11 @@
 
   </div>
   </div>
+-->
   <!-- end team members -->
 
   <!-- start services -->
+  <!--
   <div class="services" id="services">
     <h2 class="main-title">services</h2>
     <div class="container">
@@ -552,44 +530,11 @@
   
     </div>
   </div>
+-->
   <!-- end services -->
 
-  <!-- start our-skills -->
-  <div class="our-skills" id="our-skills">
-    <h2 class="main-title">our skills</h2>
-    <div class="container">
-      <img src="images/skills.svg" alt="image not found">
-      <div class="skills">
-        <div class="skill">
-          <h3>HTML<span>80%</span></h3> 
-            <div >
-            <span style="width: 80%;"></span>
-            </div>
-        </div>
-        <div class="skill">
-          <h3>CSS<span>90%</span></h3> 
-          <div >
-            <span style="width: 90%;"></span>
-            </div>
-        </div>
-        <div class="skill">
-          <h3>JavaScript<span>70%</span></h3> 
-          <div>
-            <span style="width: 70%;"></span>
-            </div>
-        </div>
-        <div class="skill">
-          <h3>Python<span>77%</span></h3> 
-          <div >
-            <span style="width: 77%;"></span>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end our-skills   -->
-
   <!-- start work-steps -->
+  <!--
   <div class="work-steps" id="work-steps">
     <h2 class="main-title">How It Works</h2>
     <div class="container">
@@ -621,11 +566,13 @@
         </div>
     </div>
   </div>
+-->
   <!-- end work-steps -->
 
 
 
     <!-- start video -->
+  <!--
     <div class="video" id="video">
       <h2 class="main-title">Top Videos</h2>
       <div class="container">
@@ -653,10 +600,12 @@
 
       </div>
     </div>
+-->
     <!-- end video -->
 
 
     <!-- start pricing -->
+  <!--
     <div class="pricing" id="pricing">
       <h2 class="main-title">Pricing Plans</h2>
       <div class="container">
@@ -716,11 +665,13 @@
 
       </div>
     </div>
+-->
     <!-- end pricing -->
 
 
 
     <!-- start discount  -->
+  <!--
     <div class="discount" id="discount">
 
       <div class="side-image">
@@ -749,6 +700,7 @@
         </div>
 
     </div>
+-->
     <!-- end discount -->
 
 
